@@ -1,0 +1,2 @@
+# mynixos
+mynixos configuration
