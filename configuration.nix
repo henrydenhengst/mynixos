@@ -4,6 +4,11 @@
 
 { config, pkgs, ... }:
 
+# variables
+let
+  user="henry"
+in
+
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -188,3 +193,24 @@
   system.stateVersion = "22.05"; # Did you read the comment?
 
 }
+
+
+
+#  # automatic upgrade
+#  system.autoUpgrade = {
+#    enable = true;
+#    channel = "https://nixos.org/channels/nixos-22.05";
+#  };
+
+
+#  # clean system
+#  nix = {
+#    settings.auto-optimise-store = true;
+#    gc = {
+#       automatic = true;
+#       dates = "weekly";
+#       options = "--delete-older-than 7d"
+#    };
+#  };
+
+
