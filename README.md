@@ -1,6 +1,10 @@
 # mynixos
 mynixos configuration
 
+minimum requirements:
+* 2 Gb memory
+* 30 Gb harddisk space
+
 What to do to make use of the configuration.nix file.
 
 1) Go to the [NixOS website](https://nixos.org/) and [download](https://channels.nixos.org/nixos-22.05/latest-nixos-gnome-x86_64-linux.iso) the latest iso.
