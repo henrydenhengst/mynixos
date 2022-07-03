@@ -97,30 +97,34 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    curl
-    firefox
-    google-chrome
-    signal-desktop
     ardour
+    arp-scan
     asciinema
+    atuin
     bat
     bpytop
     brave
+    broot
     btop
     clementine
+    curl
     dmenu
+    du-dust
     emacs
+    exa
+    fd
     filezilla
+    firefox
     fish
     flameshot
     flatpak
     freetube
+    fundoc
     geany
     ghostwriter
     gimp
     git
+    google-chrome
     gparted
     hddtemp
     hplip
@@ -139,29 +143,42 @@ in
     mc
     mpv
     nerdfonts
+    nitrogen
     nfs-utils
     nmap
     obs-studio
     onionshare
     p7zip
+    procs
     qbittorrent
     ranger
     remmina
+    ripgrep
     rsync
+    rustscan
+    signal-desktop
     shotcut
     smartmontools
+    starship
+    t-rec
     terminator
     tmux
+    tokei
     tomb
     topgrade
     tor
     tor-browser-bundle-bin
+    tre-command
     variety
     ventoy-bin
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     vlc
     vnstat
+    wget
     youtube-dl
+    yt-dlp
     zsh
+    
 
   ];
 
