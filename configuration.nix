@@ -98,33 +98,59 @@ in
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     
-    # Audio & Video
+    ### GTK Themes
+    vimix-gtk-themes
+    stilo-themes
+    zuki-themes
+    kitty-themes
+    
+    ### Audio & Video
     ardour
     clementine
     davinci-resolve
     freetube
     kdenlive
+    kodi
     lbry
     mpv
     obs-studio
     vlc
 
-    # Developer Tools
-    emacs # editor
+    ### Developer Tools
+    emacs
     geany
     micro
+    vscodium
     
-    # Games
+    ### Games
     retroarchFull
+    zeroad
+    xonotic
+    minetest
+    minecraft
+    endless-sky
+    flare
+    astromenace
+    redeclipse
+    superTuxKart
+    lincity
+    extremetuxracer
+    urbanterror
+    speed_dreams
+    torcs
+    steam
+    bottles
+    lutris
     
-    # Graphics & Photography
+    
+    ### Graphics & Photography
     inkscape
     gimp
     blender
     darktable
     flameshot
     
-    # Communication / Internet / News
+    ### Communication / Internet / News
     brave
     firefox
     google-chrome
@@ -133,13 +159,13 @@ in
     tor-browser-bundle-bin
     onionshare
     
-    # Productivity
+    ### Productivity
     exodus
     ghostwriter
     libreoffice
     monero-gui
     
-    # Science / System / Utilities / Security
+    ### Science / System / Utilities / Security
     aircrack-ng
     arp-scan
     asciinema
@@ -220,7 +246,7 @@ in
     yt-dlp
     zsh
     
-    # Advanced Ethical Hacking Tools
+    ### Advanced Ethical Hacking Tools
     abootimg
     aesfix
     aeskeyfind
@@ -261,6 +287,37 @@ in
     cryptsetup
     curlftpfs
     cutecom
+    
+    ### Programming Languages / SQL / Webserver
+    go
+    rustc
+    erlang
+    java-language-server
+    ruby
+    php
+    perl
+    kotlin
+    scala
+    elixir
+    swift
+    sqls
+    sqlc
+    sqlite
+    mysql80
+    mysql57
+    postgresql
+    mariadb
+    cockroachdb
+    clickhouse
+    neo4j
+    mongodb
+    rethinkdb
+    redis
+    cassandra
+    couchdb3
+    apacheHttpd
+    nginx
+    
     
 
   ];
