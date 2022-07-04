@@ -200,6 +200,40 @@ in
     yt-dlp
     zsh
     
+    # Advanced Ethical Hacking Tools
+    abootimg
+    aesfix
+    aeskeyfind
+    afflib
+    aflplusplus
+    airgeddon
+    amass
+    android-tools
+    android-studio
+    android-udev-rules
+    android-file-transfer
+    apktool
+    arp-scan
+    arping
+    axel
+    binwalk
+    bluez
+    brutespray
+    bully
+    cabextract
+    cadaver
+    capstone
+    ccrypt
+    certgraph
+    cewl
+    cherrytree
+    chirp
+    chisel
+    chkrootkit
+    chntpw
+    cifs-utils
+    cloudbrute
+    
 
   ];
 
