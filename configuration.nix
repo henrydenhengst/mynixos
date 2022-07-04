@@ -112,6 +112,7 @@ in
     clementine
     crunch
     curl
+    davinci-resolve
     dirb
     dmenu
     du-dust
@@ -233,6 +234,14 @@ in
     chntpw
     cifs-utils
     cloudbrute
+    cntlm
+    cowpatty
+    crackle
+    crowbar
+    crunch
+    cryptsetup
+    curlftpfs
+    cutecom
     
 
   ];
