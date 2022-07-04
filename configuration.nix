@@ -97,40 +97,71 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    aircrack-ng
+    
+    # Audio & Video
     ardour
+    clementine
+    davinci-resolve
+    freetube
+    kdenlive
+    lbry
+    mpv
+    obs-studio
+    vlc
+
+    # Developer Tools
+    emacs # editor
+    geany
+    micro
+    
+    # Games
+    retroarchFull
+    
+    # Graphics & Photography
+    inkscape
+    gimp
+    blender
+    darktable
+    flameshot
+    
+    # Communication / Internet / News
+    brave
+    firefox
+    google-chrome
+    signal-desktop
+    tor
+    tor-browser-bundle-bin
+    onionshare
+    
+    # Productivity
+    exodus
+    ghostwriter
+    libreoffice
+    monero-gui
+    
+    # Science / System / Utilities / Security
+    aircrack-ng
     arp-scan
     asciinema
     atuin
     bat
     bettercap
     bpytop
-    brave
     broot
     btop
     burpsuite
-    clementine
     crunch
     curl
-    davinci-resolve
     dirb
     dmenu
     du-dust
-    emacs
     exa
     fd
     filezilla
-    firefox
     fish
-    flameshot
     flatpak
-    freetube
     fundoc
-    geany
-    ghostwriter
-    gimp
     git
-    google-chrome
     gparted
     hash-identifier
     hashcat
@@ -140,27 +171,19 @@ in
     htop
     httrack
     iftop
-    inkscape
     john
-    kdenlive
     keepassxc
     kitty
-    lbry
-    libreoffice
     lshw
     lsof
     macchanger
     mc
-    micro
-    mpv
     nerdfonts
     nikto
     nitrogen
     nfs-utils
     metasploit
     nmap
-    obs-studio
-    onionshare
     p7zip
     procs
     proxychains
@@ -170,7 +193,6 @@ in
     ripgrep
     rsync
     rustscan
-    signal-desktop
     shotcut
     smartmontools
     socialscan
@@ -183,14 +205,11 @@ in
     tokei
     tomb
     topgrade
-    tor
-    tor-browser-bundle-bin
     traceroute
     tre-command
     variety
     ventoy-bin
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    vlc
+    vim
     vnstat
     wget
     whatweb
