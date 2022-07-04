@@ -97,17 +97,22 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    aircrack-ng
     ardour
     arp-scan
     asciinema
     atuin
     bat
+    bettercap
     bpytop
     brave
     broot
     btop
+    burpsuite
     clementine
+    crunch
     curl
+    dirb
     dmenu
     du-dust
     emacs
@@ -126,12 +131,16 @@ in
     git
     google-chrome
     gparted
+    hash-identifier
+    hashcat
     hddtemp
     hplip
     hplipWithPlugin
     htop
+    httrack
     iftop
     inkscape
+    john
     kdenlive
     keepassxc
     kitty
@@ -139,17 +148,21 @@ in
     libreoffice
     lshw
     lsof
-    micro
+    macchanger
     mc
+    micro
     mpv
     nerdfonts
+    nikto
     nitrogen
     nfs-utils
+    metasploit
     nmap
     obs-studio
     onionshare
     p7zip
     procs
+    proxychains
     qbittorrent
     ranger
     remmina
@@ -159,15 +172,19 @@ in
     signal-desktop
     shotcut
     smartmontools
+    socialscan
+    sqlmap
     starship
     t-rec
     terminator
+    thc-hydra
     tmux
     tokei
     tomb
     topgrade
     tor
     tor-browser-bundle-bin
+    traceroute
     tre-command
     variety
     ventoy-bin
@@ -175,6 +192,10 @@ in
     vlc
     vnstat
     wget
+    whatweb
+    whois
+    wireshark
+    wpscan
     youtube-dl
     yt-dlp
     zsh
