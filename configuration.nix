@@ -4,10 +4,10 @@
 
 { config, pkgs, ... }:
 
-# variables
-let
-  user="henry"
-in
+### variables
+# let
+#   user="henry"
+# in
 
 {
   imports =
