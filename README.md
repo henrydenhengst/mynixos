@@ -1,9 +1,9 @@
 # mynixos
 mynixos configuration
 
-minimum requirements:
-* 2 Gb memory
-* 30 Gb harddisk space
+minimum requirements current config:
+* 4 Gb memory
+* 100 Gb harddisk space
 
 What to do to make use of the configuration.nix file.
 
