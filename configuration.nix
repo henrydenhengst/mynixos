@@ -247,76 +247,50 @@ in
     zsh
     
     ### Advanced Ethical Hacking Tools
-    abootimg
-    aesfix
-    aeskeyfind
-    afflib
-    aflplusplus
-    airgeddon
-    amass
-    android-tools
-    android-studio
-    android-udev-rules
-    android-file-transfer
-    apktool
-    arp-scan
-    arping
-    axel
-    binwalk
-    bluez
-    brutespray
-    bully
-    cabextract
-    cadaver
-    capstone
-    ccrypt
-    certgraph
-    cewl
-    cherrytree
-    chirp
-    chisel
-    chkrootkit
-    chntpw
-    cifs-utils
-    cloudbrute
-    cntlm
-    cowpatty
-    crackle
-    crowbar
-    crunch
-    cryptsetup
-    curlftpfs
-    cutecom
+    # abootimg
+    # aesfix
+    # aeskeyfind
+    # afflib
+    # aflplusplus
+    # airgeddon
+    # amass
+    # android-tools
+    # android-studio
+    # android-udev-rules
+    # android-file-transfer
+    # apktool
+    # arp-scan
+    # arping
+    # axel
+    # binwalk
+    # bluez
+    # brutespray
+    # bully
+    # cabextract
+    # cadaver
+    # capstone
+    # ccrypt
+    # certgraph
+    # cewl
+    # cherrytree
+    # chirp
+    # chisel
+    # chkrootkit
+    # chntpw
+    # cifs-utils
+    # cloudbrute
+    # cntlm
+    # cowpatty
+    # crackle
+    # crowbar
+    # crunch
+    # cryptsetup
+    # curlftpfs
+    # cutecom
     
     ### Programming Languages / SQL / Webserver
-    go
-    rustc
-    erlang
-    java-language-server
-    ruby
-    php
-    perl
-    kotlin
-    scala
-    elixir
-    swift
-    sqls
-    sqlc
-    sqlite
-    mysql80
-    mysql57
-    postgresql
-    mariadb
-    cockroachdb
-    clickhouse
-    neo4j
-    mongodb
-    rethinkdb
-    redis
-    cassandra
-    couchdb3
-    apacheHttpd
-    nginx
+    # docker
+    # docker-compose
     
     
 
