@@ -107,7 +107,7 @@
     ### Audio & Video
     ardour
     clementine
-    davinci-resolve
+    # davinci-resolve
     freetube
     kdenlive
     kodi
