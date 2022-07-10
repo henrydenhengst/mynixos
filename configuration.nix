@@ -123,6 +123,7 @@
     vscodium
     
     ### Games
+    steam
     retroarchFull
     zeroad
     xonotic
@@ -288,8 +289,8 @@
     # cutecom
     
     ### Programming Languages / SQL / Webserver
-    # docker
-    # docker-compose
+    docker
+    docker-compose
     
     
 
@@ -300,6 +301,9 @@
   
   ### Steam
   programs.steam.enable = true;
+  
+  ### Docker
+  virtualisation.docker.enable = true;
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
