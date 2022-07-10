@@ -122,10 +122,11 @@
     vlc
 
     ### Developer Tools
-    emacs   # options? config?
-    geany   # options? config?
-    micro   # options? config?
-    vscodium  # options? config?
+    emacs   # https://search.nixos.org/options?query=emacs
+    vim     # .vimrc
+    geany
+    micro
+    vscodium 
     
     ### Games
     steam
@@ -212,7 +213,7 @@
     nerdfonts
     nikto
     nitrogen
-    nfs-utils
+    nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
     metasploit
     nmap
     p7zip
@@ -222,7 +223,7 @@
     ranger
     remmina
     ripgrep
-    rsync
+    rsync # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=rsync
     rustscan
     shotcut
     smartmontools
@@ -232,25 +233,24 @@
     t-rec
     terminator
     thc-hydra
-    tmux # optition? https://github.com/tmux-plugins/tmux-resurrect
+    tmux # optition = https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=tmux + https://github.com/tmux-plugins/tmux-resurrect
     tokei
     tomb
     topgrade
     traceroute
     tre-command
-    variety   # options? config?
+    variety
     ventoy-bin
-    vim
     vnstat
     wezterm # Alternative Variety ? https://gist.github.com/Drallas/a496282dabcd2a5d781263a05a0ba266 
     wget
     whatweb
     whois
-    wireshark
+    wireshark # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=wireshark
     wpscan
     youtube-dl
     yt-dlp
-    zsh
+    zsh # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=zsh
     
     
     ### Programming Languages / SQL / Webserver
@@ -267,6 +267,20 @@
   
   ### Steam
   programs.steam.enable = true;
+  
+  ### Starship
+  programs.starship.enable = true;
+  # programs.starship.settings  https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/programs/starship.nix
+  
+  ### Vim
+  programs.vim.package = true;
+  programs.vim.defaultEditor = true;
+  
+  ### vnstat
+  services.vnstat.enable = true;
+  
+  ### traceroute
+  programs.traceroute.enable = true;
   
   ### Docker
   virtualisation.docker.enable = true;
