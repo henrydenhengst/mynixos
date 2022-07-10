@@ -295,6 +295,13 @@
     
 
   ];
+  
+  ### Kodi Plugins
+  # services.xserver.desktopManager.kodi.package = kodi.withPackages (pkgs: with pkgs; [ osmc-skin ]);
+  
+  
+  
+  
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
