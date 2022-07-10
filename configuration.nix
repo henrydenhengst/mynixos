@@ -341,12 +341,8 @@
 
 
 
-#  # automatic upgrade
-#  system.autoUpgrade = {
-#    enable = true;
-#    channel = "https://nixos.org/channels/nixos-22.05";
-#  };
-
+### automatic upgrade
+system.autoUpgrade.enable = true;
 
 ### clean system
 #nix = {
