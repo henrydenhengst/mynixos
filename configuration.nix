@@ -83,11 +83,16 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.henry = {
-    isNormalUser = true;
-    description = "henry";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" "lp" "scanner" ];
-    initialPassword = "password";
+  users = {
+    mutableUsers = true;
+    users.henry = {
+      isNormalUser = true;
+      description = "henry";
+      extraGroups = [ "networkmanager" "wheel" "video" "audio" "lp" "scanner" ];
+      # You can keep the initialPassword if you *really* want to, but
+      # that risks forgetting to change it
+      # initialPassword = "password";
+    };
   };
 
   # Allow unfree packages
@@ -343,14 +348,14 @@
 #  };
 
 
-#  # clean system
-#  nix = {
-#    settings.auto-optimise-store = true;
-#    gc = {
-#       automatic = true;
-#       dates = "weekly";
-#       options = "--delete-older-than 7d"
-#    };
-#  };
+### clean system
+nix = {
+  settings.auto-optimise-store = true;
+  gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+};
 
 
