@@ -122,10 +122,10 @@
     vlc
 
     ### Developer Tools
-    emacs
-    geany
-    micro
-    vscodium
+    emacs   # options? config?
+    geany   # options? config?
+    micro   # options? config?
+    vscodium  # options? config?
     
     ### Games
     steam
@@ -232,16 +232,17 @@
     t-rec
     terminator
     thc-hydra
-    tmux
+    tmux # optition? https://github.com/tmux-plugins/tmux-resurrect
     tokei
     tomb
     topgrade
     traceroute
     tre-command
-    variety
+    variety   # options? config?
     ventoy-bin
     vim
     vnstat
+    wezterm # Alternative Variety ? https://gist.github.com/Drallas/a496282dabcd2a5d781263a05a0ba266 
     wget
     whatweb
     whois
@@ -251,53 +252,13 @@
     yt-dlp
     zsh
     
-    ### Advanced Ethical Hacking Tools
-    # abootimg
-    # aesfix
-    # aeskeyfind
-    # afflib
-    # aflplusplus
-    # airgeddon
-    # amass
-    # android-tools
-    # android-studio
-    # android-udev-rules
-    # android-file-transfer
-    # apktool
-    # arp-scan
-    # arping
-    # axel
-    # binwalk
-    # bluez
-    # brutespray
-    # bully
-    # cabextract
-    # cadaver
-    # capstone
-    # ccrypt
-    # certgraph
-    # cewl
-    # cherrytree
-    # chirp
-    # chisel
-    # chkrootkit
-    # chntpw
-    # cifs-utils
-    # cloudbrute
-    # cntlm
-    # cowpatty
-    # crackle
-    # crowbar
-    # crunch
-    # cryptsetup
-    # curlftpfs
-    # cutecom
     
     ### Programming Languages / SQL / Webserver
     docker
     docker-compose
     
-    
+    ### Wallpapers
+    # https://darknetdiaries.com/wallpaper/
 
   ];
   
@@ -309,6 +270,8 @@
   
   ### Docker
   virtualisation.docker.enable = true;
+  ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
+  ## https://www.kali.org/docs/containers/official-kalilinux-docker-images/
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -353,5 +316,6 @@ nix = {
   };
 };
 
+### DO NOT EDIT BELOW THIS LINE ###
 
 }
