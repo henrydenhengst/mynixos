@@ -301,7 +301,15 @@
   #       {"font":{bold":{"style":"Bold"}}}
   #     ' ';
   #   };
-  #
+  #   home.file.".doom.d" = {
+  #     source ./doom.d;
+  #     recursive = true;
+  #     onChange = buildins.readFile ./doom.sh;
+  #   };
+  #   home.file.".config/polybar/script/mic.sh"={
+  #     source = ./mic.sh;
+  #     executable = true;
+  #   };
   # };
   
   ### Docker
