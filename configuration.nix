@@ -296,6 +296,11 @@
   ### Home-Manager to install pkgs for a user, and configuration of dotfiles etc
   # home-manager.user.henry = { pkgs, ... }: {
   #   home.packages = with pkgs; [ htop vim ];
+  #   home.file = {
+  #     ".config/alacritty/alacritty.yml".txt = ' '
+  #       {"font":{bold":{"style":"Bold"}}}
+  #     ' ';
+  #   };
   #
   # };
   
