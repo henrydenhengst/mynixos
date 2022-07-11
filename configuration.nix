@@ -133,8 +133,8 @@
     retroarchFull
     zeroad
     xonotic
-    minetest
-    minecraft
+    minetest   # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=minetest
+    minecraft   # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=minecraft
     endless-sky
     flare
     astromenace
@@ -169,6 +169,7 @@
     exodus
     ghostwriter
     libreoffice
+    marktext
     monero-gui
     
     ### Science / System / Utilities / Security
@@ -262,8 +263,12 @@
 
   ];
   
-  ### Kodi Plugins
+  ### Kodi + Plugins
+  services.xserver.desktopManager.kodi.enable = true;
   # services.xserver.desktopManager.kodi.package = kodi.withPackages (pkgs: with pkgs; [ osmc-skin ]);
+  
+  ### RetroArch
+  services.xserver.desktopManager.retroarch.enable = true;
   
   ### Steam
   programs.steam.enable = true;
