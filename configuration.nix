@@ -295,7 +295,7 @@
   
   ### Home-Manager
   # home-manager.user.henry = { pkgs, ... }: {
-  #
+  #   home.packages = with pkgs; [ htop vim ];
   #
   # };
   
