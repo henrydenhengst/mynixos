@@ -185,6 +185,8 @@
     burpsuite
     crunch
     curl
+    dconf
+    dconf2nix
     dirb
     dmenu
     du-dust
@@ -272,6 +274,9 @@
   
   ### Steam
   programs.steam.enable = true;
+  
+  ### Dconf
+  programs.dconf.enable = true;
   
   ### Starship
   programs.starship.enable = true;
