@@ -312,6 +312,15 @@
   #   };
   # };
   
+  
+  ### Flakes
+  #   nix = {
+  #     package = pkgs.nixFlakes;
+  #     extraOptions = "experimental-features =
+  #     nix-command flakes";
+  #   };
+  
+  
   ### Docker
   virtualisation.docker.enable = true;
   ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
