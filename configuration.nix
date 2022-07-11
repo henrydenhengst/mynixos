@@ -278,7 +278,7 @@
   # programs.starship.settings  https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/programs/starship.nix
   
   ### Vim
-  programs.vim.package = true;
+  # programs.vim.package = true;
   programs.vim.defaultEditor = true;
   
   ### vnstat
