@@ -293,7 +293,7 @@
   ### traceroute
   programs.traceroute.enable = true;
   
-  ### Home-Manager
+  ### Home-Manager to install pkgs for a user, and configuration of dotfiles etc
   # home-manager.user.henry = { pkgs, ... }: {
   #   home.packages = with pkgs; [ htop vim ];
   #
