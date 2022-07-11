@@ -92,7 +92,7 @@
       extraGroups = [ "networkmanager" "wheel" "video" "audio" "lp" "scanner" ];
       # You can keep the initialPassword if you *really* want to, but
       # that risks forgetting to change it
-      # initialPassword = "password";
+      initialPassword = "password";
     };
   };
 
@@ -292,6 +292,12 @@
   
   ### traceroute
   programs.traceroute.enable = true;
+  
+  ### Home-Manager
+  # home-manager.user.henry = { pkgs, ... }: {
+  #
+  #
+  # };
   
   ### Docker
   virtualisation.docker.enable = true;
