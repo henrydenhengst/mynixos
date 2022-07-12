@@ -261,8 +261,6 @@
     docker
     docker-compose
     
-    ### Wallpapers
-    # https://darknetdiaries.com/wallpaper/
 
   ];
   
