@@ -1,0 +1,124 @@
+kodiPackages.kodi
+Media center
+kodiPackages.six
+Python 2 and 3 compatibility utilities
+kodiPackages.idna
+Internationalized Domain Names for Python
+kodiPackages.iagl
+Launch Games from the Internet using Kodi
+kodiPackages.trakt
+Trakt.tv movie and TV show scrobbler for Kodi
+kodiPackages.arrow
+Better dates & times for Python
+kodiPackages.kodi-six
+Wrappers around Kodi Python API for seamless Python 2/3 compatibility
+kodiPackages.keymap
+A GUI for configuring mappings for remotes, keyboard and other inputs supported by Kodi
+kodiPackages.future
+The missing compatibility layer between Python 2 and Python 3
+kodiPackages.youtube
+YouTube is one of the biggest video-sharing websites of the world
+kodiPackages.urllib3
+HTTP library with thread-safe connection pooling, file post, and more
+kodiPackages.svtplay
+Watch content from SVT Play
+kodiPackages.signals
+Provides signal/slot mechanism for inter-addon communication
+kodiPackages.routing
+A routing module for kodi plugins
+kodiPackages.pvr-hts
+Kodi's Tvheadend HTSP client addon
+kodiPackages.netflix
+Netflix VOD Services Add-on
+kodiPackages.chardet
+Universal encoding detector
+kodiPackages.certifi
+Python package for providing Mozilla's CA Bundle
+kodiPackages.vfs-sftp
+SFTP Virtual Filesystem add-on for Kodi
+kodiPackages.requests
+Python HTTP for Humans
+kodiPackages.myconnpy
+MySQL Connector/Python
+kodiPackages.libretro
+Libretro wrapper for Kodi's Game API
+kodiPackages.joystick
+Binary addon for raw joystick input.
+kodiPackages.jellyfin
+A whole new way to manage and view your media library
+kodiPackages.dateutil
+Extensions to the standard Python datetime module
+kodiPackages.websocket
+A WebSocket client for Python
+kodiPackages.pdfreader
+A comic book reader
+kodiPackages.osmc-skin
+The default skin for OSMC
+kodiPackages.orftvthek
+An addon that gives you access to the ORF TVthek Video Platform
+kodiPackages.invidious
+A privacy-friendly way of watching YouTube content
+kodiPackages.xbmcswift2
+Framework to ease development of Kodi addons
+kodiPackages.simplejson
+Simple, fast, extensible JSON encoder/decoder for Python
+kodiPackages.defusedxml
+defusing XML bombs and other exploits
+kodiPackages.kodi-platform
+kodiPackages.trakt-module
+Python trakt.py library packed for Kodi
+kodiPackages.arteplussept
+Watch videos available on Arte+7
+kodiPackages.archive_tool
+A set of common python functions to work with the Kodi archive virtual file system (vfs) binary addons
+kodiPackages.a4ksubtitles
+Multi-Source Subtitles Addon
+kodiPackages.steam-library
+View your entire Steam library right from Kodi
+kodiPackages.pvr-hdhomerun
+Kodi's HDHomeRun PVR client addon
+kodiPackages.libretro-mgba
+mGBA for Kodi
+kodiPackages.vfs-libarchive
+LibArchive Virtual Filesystem add-on for Kodi
+kodiPackages.steam-launcher
+Launch Steam in Big Picture Mode from Kodi
+kodiPackages.requests-cache
+Persistent cache for requests library
+kodiPackages.pvr-iptvsimple
+Kodi's IPTV Simple client addon
+kodiPackages.libretro-snes9x
+Snes9X GameClient for Kodi
+kodiPackages.steam-controller
+Binary addon for steam controller.
+kodiPackages.libretro-genplus
+Genesis Plus GX GameClient for Kodi
+kodiPackages.inputstream-rtmp
+Client for RTMP streams
+kodiPackages.typing_extensions
+Python typing extensions
+kodiPackages.inputstreamhelper
+A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback
+kodiPackages.inputstream-adaptive
+Kodi inputstream addon for several manifest types
+kodi-retroarch-advanced-launchers
+Kodi retroarch advanced launchers
+kodiPackages.inputstream-ffmpegdirect
+InputStream Client for streams that can be opened by either FFmpeg's libavformat or Kodi's cURL
+home-assistant-component-tests.kodi
+Open source home automation that puts local control and privacy first
+kodiPackages.controller-topology-project
+Models how controllers connect to and map to each other for all gaming history
+emacs28Packages.kodi-remote
+python39Packages.pykodi
+An async python interface for Kodi over JSON-RPC
+python310Packages.pykodi
+An async python interface for Kodi over JSON-RPC
+mediaelch
+Media Manager for Kodi
+vdrPlugins.vnsiserver
+VDR plugin to handle KODI clients.
+libcec_platform
+Platform library for libcec and Kodi addons
+tvheadend
+TV streaming server
