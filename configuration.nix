@@ -262,6 +262,8 @@
 
   ];
   
+  ### List services that you want to enable:
+  
   ### Kodi + Plugins
   services.xserver.desktopManager.kodi.enable = true;
   # services.xserver.desktopManager.kodi.package = kodi.withPackages (pkgs: with pkgs; [ osmc-skin ]);
@@ -287,8 +289,47 @@
   services.vnstat.enable = true;
   
   ### traceroute
-  programs.traceroute.enable = true;
+  programs.traceroute.enable = true;    
   
+  ### Docker
+  virtualisation.docker.enable = true;
+  ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
+  ## https://www.kali.org/docs/containers/official-kalilinux-docker-images/
+
+  ### Enable the OpenSSH daemon.
+  services.openssh.enable = true;  
+  # Some programs need SUID wrappers, can be configured further or are
+  # started in user sessions.
+  # programs.mtr.enable = true;
+  # programs.gnupg.agent = {
+  #   enable = true;
+  #   enableSSHSupport = true;
+  # };
+
+  # Firewall
+  # Open ports in the firewall.
+  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
+
+  ### automatic upgrade
+  system.autoUpgrade = {
+      enable = true;
+      channel = "https://nixos.org/channels/nixos-22.05";
+  };
+
+  ### clean system
+  nix = {
+    settings.auto-optimise-store = true;
+    gc = {
+      automatic = true;
+      persistent = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+  };
+
   ### Home-Manager to install pkgs for a user, and configuration of dotfiles etc
   # home-manager.user.henry = { pkgs, ... }: {
   #   home.packages = with pkgs; [ htop vim ];
@@ -307,40 +348,15 @@
   #     executable = true;
   #   };
   # };
-  
-  
+
   ### Flakes
-  #   nix = {
-  #     package = pkgs.nixFlakes;
-  #     extraOptions = "experimental-features =
-  #     nix-command flakes";
-  #   };
-  
-  
-  ### Docker
-  virtualisation.docker.enable = true;
-  ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
-  ## https://www.kali.org/docs/containers/official-kalilinux-docker-images/
-  
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  nix = {
+    package = pkgs.nixFlakes;
+    extraOptions = "experimental-features =
+    nix-command flakes";
+  };
 
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-    services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
+  ### System State Version
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leavecatenate(variables, "bootdev", bootdev)
@@ -348,23 +364,6 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
-
-### automatic upgrade
-  system.autoUpgrade = {
-      enable = true;
-      channel = "https://nixos.org/channels/nixos-22.05";
-  };
-
-### clean system
-nix = {
-  settings.auto-optimise-store = true;
-  gc = {
-    automatic = true;
-    persistent = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
-  };
-};
 
 ### DO NOT EDIT BELOW THIS LINE ###
 
