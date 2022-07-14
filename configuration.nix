@@ -124,7 +124,7 @@
 
     ### Developer Tools
     emacs   # https://search.nixos.org/options?query=emacs
-    vim     # .vimrc
+    vim
     geany
     micro
     vscodium 
@@ -134,8 +134,6 @@
     retroarchFull
     zeroad
     xonotic
-    minetest   # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=minetest
-    minecraft   # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=minecraft
     endless-sky
     flare
     astromenace
@@ -237,7 +235,7 @@
     t-rec
     terminator
     thc-hydra
-    tmux # optition = https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=tmux + https://github.com/tmux-plugins/tmux-resurrect
+    tmux # option = https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=tmux + https://github.com/tmux-plugins/tmux-resurrect
     tokei
     tomb
     topgrade
@@ -246,7 +244,7 @@
     variety
     ventoy-bin
     vnstat
-    wezterm # Alternative Variety ? https://gist.github.com/Drallas/a496282dabcd2a5d781263a05a0ba266 
+    wezterm
     wget
     whatweb
     whois
