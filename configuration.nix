@@ -113,7 +113,6 @@
     ### Audio & Video
     ardour
     clementine
-    # davinci-resolve
     freetube
     kdenlive
     kodi
@@ -123,7 +122,7 @@
     vlc
 
     ### Developer Tools
-    emacs   # https://search.nixos.org/options?query=emacs
+    emacs   
     vim
     geany
     micro
@@ -290,6 +289,10 @@
   ### Vim
   # programs.vim.package = true;
   programs.vim.defaultEditor = true;
+  
+  ### emacs
+  services.emacs.enable = true;
+  services.emacs.install = true;
   
   ### vnstat
   services.vnstat.enable = true;
