@@ -305,6 +305,9 @@
   # programs.zsh.autosuggestions.enable = true;
   # programs.zsh.ohMyZsh.enable = true;
   
+  ### fish
+  # programs.fish.enable = true;
+  
   ### Docker
   virtualisation.docker.enable = true;
   ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
