@@ -235,7 +235,10 @@
     t-rec
     terminator
     thc-hydra
-    tmux # option = https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=tmux + https://github.com/tmux-plugins/tmux-resurrect
+    tmux 
+    tmuxPlugins.dracula
+    tmuxPlugins.resurrect
+    tmuxPlugins.tilish
     tokei
     tomb
     topgrade
@@ -289,7 +292,11 @@
   services.vnstat.enable = true;
   
   ### traceroute
-  programs.traceroute.enable = true;    
+  programs.traceroute.enable = true;  
+  
+  ### tmux
+  programs.tmux.enable = true;
+  programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
   
   ### Docker
   virtualisation.docker.enable = true;
