@@ -255,7 +255,7 @@
     wpscan
     youtube-dl
     yt-dlp
-    zsh # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=zsh
+    zsh
     
     
     ### Programming Languages / SQL / Webserver
@@ -297,6 +297,13 @@
   ### tmux
   programs.tmux.enable = true;
   programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
+  
+  ### zsh
+  # programs.zsh.enable = true;
+  # programs.zsh.enableCompletion = true;
+  # programs.zsh.syntaxHighlighting.enable = true;
+  # programs.zsh.autosuggestions.enable = true;
+  # programs.zsh.ohMyZsh.enable = true;
   
   ### Docker
   virtualisation.docker.enable = true;
