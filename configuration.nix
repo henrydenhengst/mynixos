@@ -298,6 +298,10 @@
   programs.tmux.enable = true;
   programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
   
+  ### bash
+  programs.bash.enableCompletion = true;
+  programs.bash.enableLsColors = true;
+  
   ### zsh
   # programs.zsh.enable = true;
   # programs.zsh.enableCompletion = true;
