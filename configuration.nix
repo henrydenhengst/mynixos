@@ -2,12 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
-
 ### variables
 # let
 #   user="henry"
 # in
+
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -19,6 +19,7 @@
   # Bootloader.
   # initrd.kernelModules = ["amdgpu"]
   boot.loader.grub.enable = true;
+  # change vda to sda in case of a physical machine (desktop / laptop)
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
   # boot.loader.grub.efiSupport = true;
@@ -27,9 +28,10 @@
   # boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 5;
 
-
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  # Define your hostname.
+  networking.hostName = "nixos"; 
+  # Enables wireless support via wpa_supplicant.
+  # networking.wireless.enable = true;  
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -43,7 +45,6 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "nl_NL.utf8";
-
 
   # Enable the Cinnamon Desktop Environment.
   services = {
@@ -72,12 +73,10 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
     jack.enable = true;
-
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
-    #media-session.enable = true;
+    # media-session.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -144,8 +143,7 @@
     speed_dreams
     torcs
     bottles
-    lutris
-    
+    lutris    
     
     ### Graphics & Photography
     inkscape
@@ -256,11 +254,9 @@
     yt-dlp
     zsh
     
-    
     ### Programming Languages / SQL / Webserver
     docker
     docker-compose
-    
 
   ];
   
@@ -284,7 +280,7 @@
   
   ### Starship
   programs.starship.enable = true;
-  # programs.starship.settings  https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/programs/starship.nix
+  # programs.starship.settings  [ ]
   
   ### Vim
   # programs.vim.package = true;
