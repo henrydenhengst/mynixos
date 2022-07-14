@@ -251,7 +251,7 @@
     wget
     whatweb
     whois
-    wireshark # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=wireshark
+    wireshark
     wpscan
     youtube-dl
     yt-dlp
@@ -276,6 +276,9 @@
   
   ### Steam
   programs.steam.enable = true;
+  
+  ### wireshark
+  programs.wireshark.enable = true;
   
   ### Dconf
   programs.dconf.enable = true;
