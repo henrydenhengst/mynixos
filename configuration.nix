@@ -298,7 +298,7 @@
   
   ### tmux
   programs.tmux.enable = true;
-  programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
+  # programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
   
   ### bash
   programs.bash.enableCompletion = true;
@@ -375,8 +375,7 @@
   ### Flakes
   nix = {
     package = pkgs.nixFlakes;
-    extraOptions = "experimental-features =
-    nix-command flakes";
+    extraOptions = "experimental-features = nix-command flakes";
   };
 
   ### System State Version
