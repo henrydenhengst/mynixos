@@ -87,7 +87,7 @@
     mutableUsers = true;
     users.henry = {
       isNormalUser = true;
-      description = "henry";
+      description = "Henry den Hengst";
       extraGroups = [ "networkmanager" "wheel" "video" "audio" "lp" "scanner" ];
       # You can keep the initialPassword if you *really* want to, but
       # that risks forgetting to change it
@@ -339,6 +339,13 @@
   ### Starship
   programs.starship.enable = true;
   # programs.starship.settings  [ ]
+  
+  ### Git
+  programs.git = {
+    enable = true;
+    userName = "Henry den Hengst";
+    userEmail = "henrydenhengst@gmail.com";
+  };
   
   ### Vim
   # programs.vim.package = true;
