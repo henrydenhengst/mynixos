@@ -108,6 +108,7 @@
     stilo-themes
     zuki-themes
     kitty-themes
+    dracula-theme
     
     ### Fonts
     open-fonts
