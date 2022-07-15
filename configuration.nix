@@ -109,6 +109,27 @@
     zuki-themes
     kitty-themes
     
+    ### Fonts
+    open-fonts
+    nerdfonts
+    terminus-nerdfont
+    inconsolata-nerdfont
+    google-fonts
+    powerline-fonts
+    winePackages.fonts
+    wine64Packages.fonts
+    wineWowPackages.fonts
+    vistafonts
+    corefonts
+    redhat-official-fonts
+    textfonts
+    liberation_ttf
+    liberation_ttf_v1
+    freefont_ttf
+    roboto-mono
+    ultimate-oldschool-pc-font-pack
+    libre-caslon
+    
     ### Audio & Video
     ardour
     clementine
@@ -210,7 +231,6 @@
     lsof
     macchanger
     mc
-    nerdfonts
     nikto
     nitrogen
     nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
