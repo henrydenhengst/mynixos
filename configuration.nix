@@ -339,6 +339,11 @@
   ### fish
   # programs.fish.enable = true;
   
+  ### Fonts Settings
+  fonts.enableFontDir = true;
+  fonts.enableGhostscriptFonts = true;
+  fonts.fonts = [ pkgs.open-fonts pkgs.nerdfonts pkgs.terminus-nerdfont pkgs.inconsolata-nerdfont pkgs.google-fonts pkgs.powerline-fonts pkgs.winePackages.fonts pkgs.wine64Packages.fonts pkgs.wineWowPackages.fonts pkgs.vistafonts pkgs.corefonts pkgs.redhat-official-fonts pkgs.textfonts pkgs.liberation_ttf pkgs.liberation_ttf_v1 pkgs.freefont_ttf pkgs.roboto-mono pkgs.ultimate-oldschool-pc-font-pack pkgs.libre-caslon ];
+  
   ### Docker
   virtualisation.docker.enable = true;
   ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
