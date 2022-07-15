@@ -196,52 +196,76 @@
     arp-scan
     asciinema
     atuin
+    bash
     bat
     bettercap
     bpytop
     broot
     btop
     burpsuite
+    coreutils
     crunch
     curl
     dconf
     dconf2nix
     dirb
     dmenu
+    dnsutils
     du-dust
     exa
     fd
+    file
     filezilla
     fish
     flatpak
     fundoc
+    ghostscript
     git
+    gksu
+    gnupg
     gparted
+    gphoto2
     hash-identifier
     hashcat
     hddtemp
+    hdf5
     hplip
     hplipWithPlugin
     htop
     httrack
     iftop
+    imagemagick
+    jmtpfs
     john
     keepassxc
+    killall
     kitty
+    libmtp
     lshw
     lsof
     macchanger
     mc
+    metasploit
+    mkpasswd
+    mtpfs
+    nethogs
+    nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
     nikto
     nitrogen
-    nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
-    metasploit
+    nix-index
+    nix-prefetch-git
     nmap
+    ntfs3g
+    openvpn
     p7zip
+    pandoc
+    pdf2svg
+    pptp
     procs
     proxychains
     qbittorrent
     ranger
+    redshift
     remmina
     ripgrep
     rsync # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=rsync
@@ -250,6 +274,7 @@
     smartmontools
     socialscan
     sqlmap
+    sshfsFuse
     starship
     t-rec
     terminator
@@ -263,7 +288,10 @@
     topgrade
     traceroute
     tre-command
+    unrar
+    unzip
     variety
+    vbetool
     ventoy-bin
     vnstat
     wezterm
@@ -272,9 +300,14 @@
     whois
     wireshark
     wpscan
+    xclip  # system clipboard support for vim
+    yadm
+    yle-dl
     youtube-dl
     yt-dlp
+    zip
     zsh
+
     
     ### Programming Languages / SQL / Webserver
     docker
