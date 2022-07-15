@@ -117,15 +117,11 @@
     inconsolata-nerdfont
     google-fonts
     powerline-fonts
-    winePackages.fonts
-    wine64Packages.fonts
-    wineWowPackages.fonts
     vistafonts
     corefonts
     redhat-official-fonts
     textfonts
     liberation_ttf
-    liberation_ttf_v1
     freefont_ttf
     roboto-mono
     ultimate-oldschool-pc-font-pack
@@ -341,11 +337,7 @@
   # programs.starship.settings  [ ]
   
   ### Git
-  programs.git = {
-    enable = true;
-    userName = "Henry den Hengst";
-    userEmail = "henrydenhengst@gmail.com";
-  };
+  programs.git = enable = true;
   
   ### Vim
   # programs.vim.package = true;
@@ -382,7 +374,7 @@
   ### Fonts Settings
   fonts.enableFontDir = true;
   fonts.enableGhostscriptFonts = true;
-  fonts.fonts = with pkgs; [ open-fonts nerdfonts terminus-nerdfont inconsolata-nerdfont google-fonts powerline-fonts winePackages.fonts wine64Packages.fonts wineWowPackages.fonts vistafonts corefonts redhat-official-fonts textfonts liberation_ttf liberation_ttf_v1 freefont_ttf roboto-mono ultimate-oldschool-pc-font-pack libre-caslon ];
+  fonts.fonts = with pkgs; [ open-fonts nerdfonts terminus-nerdfont inconsolata-nerdfont google-fonts powerline-fonts vistafonts corefonts redhat-official-fonts textfonts liberation_ttf freefont_ttf roboto-mono ultimate-oldschool-pc-font-pack libre-caslon ];
   
   ### Docker
   virtualisation.docker.enable = true;
