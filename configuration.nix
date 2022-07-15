@@ -118,6 +118,7 @@
     lbry
     mpv
     obs-studio
+    droidcam
     vlc
 
     ### Developer Tools
@@ -271,6 +272,9 @@
   
   ### Steam
   programs.steam.enable = true;
+  
+  ### Droidcam
+  programs.droidcam.enable = true;
   
   ### wireshark
   programs.wireshark.enable = true;
