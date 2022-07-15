@@ -337,7 +337,7 @@
   # programs.starship.settings  [ ]
   
   ### Git
-  programs.git = enable = true;
+  programs.git.enable = true;
   
   ### Vim
   # programs.vim.package = true;
@@ -372,7 +372,6 @@
   # programs.fish.enable = true;
   
   ### Fonts Settings
-  fonts.enableFontDir = true;
   fonts.enableGhostscriptFonts = true;
   fonts.fonts = with pkgs; [ open-fonts nerdfonts terminus-nerdfont inconsolata-nerdfont google-fonts powerline-fonts vistafonts corefonts redhat-official-fonts textfonts liberation_ttf freefont_ttf roboto-mono ultimate-oldschool-pc-font-pack libre-caslon ];
   
