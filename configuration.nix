@@ -217,7 +217,6 @@
     fundoc
     ghostscript
     git
-    gksu
     gnupg
     gparted
     gphoto2
@@ -270,7 +269,6 @@
     smartmontools
     socialscan
     sqlmap
-    sshfsFuse
     starship
     t-rec
     terminator
