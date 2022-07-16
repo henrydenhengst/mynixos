@@ -40,9 +40,6 @@
   # Enable networking
   networking.networkmanager.enable = true;
   
-  # Mirrors
-  nix.binaryCaches = [ "https://cache.nixos.org" "https://nix-mirror.freetls.fastly.net" ]
-
   # Set your time zone.
   time.timeZone = "Europe/Amsterdam";
 
