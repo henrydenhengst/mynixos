@@ -130,6 +130,7 @@
     ### Audio & Video
     ardour
     clementine
+    deadbeef
     freetube
     kdenlive
     kodi
