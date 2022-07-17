@@ -17,21 +17,15 @@
     ];
 
   # Bootloader.
-  # initrd.kernelModules = ["amdgpu"]
-  boot.loader.grub.enable = true;
-  # change vda to sda in case of a physical machine (desktop / laptop)
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
-  # boot.loader.grub.efiSupport = true;
-  boot.loader.grub.configurationLimit = 5;
-  # boot.loader.systemd-boot.enable = true;
-  # boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.timeout = 5;
+  
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   # Define your hostname.
-  networking.hostName = "nixos"; 
+  networking.hostName = "oslo"; 
   # Enables wireless support via wpa_supplicant.
-  # networking.wireless.enable = true;  
+  networking.wireless.enable = true;  
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
