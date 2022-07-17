@@ -176,15 +176,18 @@
     firefox
     google-chrome
     signal-desktop
-    tor
-    tor-browser-bundle-bin
-    onionshare
+    element-desktop
+    lynx
+    # tor
+    # tor-browser-bundle-bin
+    # onionshare
     
     ### Productivity
     exodus
     ghostwriter
     libreoffice
     marktext
+    obsidian
     monero-gui
     
     ### Science / System / Utilities / Security
