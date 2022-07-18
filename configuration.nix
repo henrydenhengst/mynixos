@@ -357,7 +357,24 @@
   
   ### tmux
   programs.tmux.enable = true;
-  # programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
+  
+  programs.tmux.plugins = with pkgs.tmuxPlugins; [
+    resurrect
+    tilish
+    dracula
+  ];
+
+  programs.tmux.plugins = with pkgs; [
+    tmuxPlugins.resurrect
+    tmuxPlugins.tilish
+    tmuxPlugins.dracula
+  ];
+
+  programs.tmux.plugins = [
+    pkgs.tmuxPlugins.resurrect
+    pkgs.tmuxPlugins.tilish
+    pkgs.tmuxPlugins.dracula
+  ];
   
   ### bash
   programs.bash.enableCompletion = true;
