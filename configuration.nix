@@ -169,7 +169,7 @@
     ### Communication / Internet / News
     brave
     firefox
-    google-chrome
+    # google-chrome
     signal-desktop
     element-desktop
     lynx
