@@ -299,6 +299,9 @@
     yt-dlp
     zip
     zsh
+    # malcontent     # parental control
+    # malcontent-ui  # parental control
+
 
     
     ### Programming Languages / SQL / Webserver
@@ -315,6 +318,9 @@
   
   ### RetroArch
   services.xserver.desktopManager.retroarch.enable = true;
+  
+  ### parental control
+  # services.malcontent.enable = true;
   
   ### Steam
   programs.steam.enable = true;
