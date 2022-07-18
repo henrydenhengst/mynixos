@@ -25,7 +25,7 @@
   # Define your hostname.
   networking.hostName = "oslo"; 
   # Enables wireless support via wpa_supplicant.
-  networking.wireless.enable = true;  
+  # networking.wireless.enable = true;  
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -241,6 +241,7 @@
     metasploit
     mkpasswd
     mtpfs
+    neofetch
     nethogs
     nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
     nikto
@@ -302,7 +303,6 @@
     # malcontent     # parental control
     # malcontent-ui  # parental control
 
-
     
     ### Programming Languages / SQL / Webserver
     docker
@@ -319,14 +319,14 @@
   ### RetroArch
   services.xserver.desktopManager.retroarch.enable = true;
   
-  ### parental control
-  # services.malcontent.enable = true;
-  
   ### Steam
   programs.steam.enable = true;
   
   ### Droidcam
   programs.droidcam.enable = true;
+  
+  ### parental control
+  # services.malcontent.enable = true;
   
   ### wireshark
   programs.wireshark.enable = true;
@@ -336,7 +336,67 @@
   
   ### Starship
   programs.starship.enable = true;
-  # programs.starship.settings  [ ]
+  programs.starship.settings = {
+    add_newline = false;
+    format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
+    shlvl = {
+      disabled = false;
+      symbol = "ﰬ";
+      style = "bright-red bold";
+    };
+    shell = {
+      disabled = false;
+      format = "$indicator";
+      fish_indicator = "";
+      bash_indicator = "[BASH](bright-white) ";
+      zsh_indicator = "[ZSH](bright-white) ";
+    };
+    username = {
+      style_user = "bright-white bold";
+      style_root = "bright-red bold";
+    };
+    hostname = {
+      style = "bright-green bold";
+      ssh_only = true;
+    };
+    nix_shell = {
+      symbol = "";
+      format = "[$symbol$name]($style) ";
+      style = "bright-purple bold";
+    };
+    git_branch = {
+      only_attached = true;
+      format = "[$symbol$branch]($style) ";
+      symbol = "שׂ";
+      style = "bright-yellow bold";
+    };
+    git_commit = {
+      only_detached = true;
+      format = "[ﰖ$hash]($style) ";
+      style = "bright-yellow bold";
+    };
+    git_state = {
+      style = "bright-purple bold";
+    };
+    git_status = {
+      style = "bright-green bold";
+    };
+    directory = {
+      read_only = " ";
+      truncation_length = 0;
+    };
+    cmd_duration = {
+      format = "[$duration]($style) ";
+      style = "bright-blue";
+    };
+    jobs = {
+      style = "bright-green bold";
+    };
+    character = {
+      success_symbol = "[\\$](bright-green bold)";
+      error_symbol = "[\\$](bright-red bold)";
+    };
+  };
   
   ### Git
   programs.git.enable = true;
@@ -357,6 +417,7 @@
   
   ### tmux
   programs.tmux.enable = true;
+  # programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
   
   programs.tmux.plugins = with pkgs.tmuxPlugins; [
     resurrect
