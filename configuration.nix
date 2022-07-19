@@ -216,7 +216,7 @@
     file
     filezilla
     fish
-    flatpak
+    # flatpak
     fundoc
     ghostscript
     git
@@ -229,7 +229,7 @@
     hdf5
     hplip
     hplipWithPlugin
-    htop
+    # htop
     httrack
     iftop
     imagemagick
@@ -237,7 +237,7 @@
     john
     keepassxc
     killall
-    kitty
+    # kitty
     libmtp
     lshw
     lsof
@@ -275,7 +275,7 @@
     sqlmap
     starship
     t-rec
-    terminator
+    # terminator
     thc-hydra
     tmux 
     tmuxPlugins.dracula
