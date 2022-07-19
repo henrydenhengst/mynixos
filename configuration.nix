@@ -191,6 +191,11 @@
     asciinema
     atuin
     bash
+    bash-completion
+    bashdb
+    bashSnippets
+    bash-preexec
+    nix-bash-completions
     bat
     bettercap
     # bpytop
