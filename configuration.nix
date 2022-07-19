@@ -101,7 +101,7 @@
     vimix-gtk-themes
     stilo-themes
     zuki-themes
-    kitty-themes
+    # kitty-themes
     dracula-theme
     
     ### Fonts
@@ -135,7 +135,7 @@
     vlc
 
     ### Developer Tools
-    emacs   
+    # emacs   
     vim
     geany
     micro
@@ -179,9 +179,9 @@
     
     ### Productivity
     exodus
-    ghostwriter
+    # ghostwriter
     libreoffice
-    marktext
+    # marktext
     obsidian
     monero-gui
     
@@ -193,7 +193,7 @@
     bash
     bat
     bettercap
-    bpytop
+    # bpytop
     broot
     btop
     burpsuite
@@ -406,8 +406,8 @@
   programs.vim.defaultEditor = true;
   
   ### emacs
-  services.emacs.enable = true;
-  services.emacs.install = true;
+  # services.emacs.enable = true;
+  # services.emacs.install = true;
   
   ### vnstat
   services.vnstat.enable = true;
@@ -417,39 +417,25 @@
   
   ### tmux
   programs.tmux.enable = true;
-  # programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
-  
   programs.tmux.plugins = with pkgs.tmuxPlugins; [
     resurrect
     tilish
     dracula
   ];
 
-  #programs.tmux.plugins = with pkgs; [
-  #  tmuxPlugins.resurrect
-  #  tmuxPlugins.tilish
-  #  tmuxPlugins.dracula
-  #];
-
-  #programs.tmux.plugins = [
-  #  pkgs.tmuxPlugins.resurrect
-  #  pkgs.tmuxPlugins.tilish
-  #  pkgs.tmuxPlugins.dracula
-  #];
-  
   ### bash
   programs.bash.enableCompletion = true;
   programs.bash.enableLsColors = true;
   
   ### zsh
-  # programs.zsh.enable = true;
+  programs.zsh.enable = true;
   # programs.zsh.enableCompletion = true;
   # programs.zsh.syntaxHighlighting.enable = true;
   # programs.zsh.autosuggestions.enable = true;
   # programs.zsh.ohMyZsh.enable = true;
   
   ### fish
-  # programs.fish.enable = true;
+  programs.fish.enable = true;
   
   ### Fonts Settings
   fonts.enableGhostscriptFonts = true;
