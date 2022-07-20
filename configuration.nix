@@ -186,6 +186,8 @@
     monero-gui
     
     ### Science / System / Utilities / Security
+    usbutils
+    pciutils
     tree
     alacritty
     aircrack-ng
