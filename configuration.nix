@@ -188,6 +188,7 @@
     ### Science / System / Utilities / Security
     alacritty
     aircrack-ng
+    arandr
     arp-scan
     asciinema
     atuin
@@ -214,6 +215,7 @@
     du-dust
     exa
     fd
+    ffmpeg
     file
     filezilla
     fish
