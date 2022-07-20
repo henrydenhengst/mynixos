@@ -179,13 +179,14 @@
     
     ### Productivity
     exodus
-    # ghostwriter
+    ghostwriter
     libreoffice
     # marktext
-    obsidian
+    # obsidian
     monero-gui
     
     ### Science / System / Utilities / Security
+    alacritty
     aircrack-ng
     arp-scan
     asciinema
@@ -291,7 +292,7 @@
     vbetool
     ventoy-bin
     vnstat
-    wezterm
+    # wezterm
     wget
     whatweb
     whois
