@@ -188,6 +188,19 @@
     ### Science / System / Utilities / Security
     usbutils
     pciutils
+    binutils
+    mtr
+    dmidecode
+    ansible # Deployment done right
+    cachix # Nix build cache
+    lorri # Easy Nix shell
+    niv # Nix dependency management
+    nixos-generators
+    pulumi-bin # Infrastructure as code
+    python3 # Have you upgraded yet???
+    tealdeer # tldr for various shell tools
+    vagrant # Virtualization made easy
+    zola # Static site generator written in Rust
     tree
     alacritty
     aircrack-ng
