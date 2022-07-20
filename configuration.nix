@@ -199,7 +199,6 @@
     pulumi-bin # Infrastructure as code
     python3 # Have you upgraded yet???
     tealdeer # tldr for various shell tools
-    vagrant # Virtualization made easy
     zola # Static site generator written in Rust
     tree
     alacritty
@@ -327,9 +326,13 @@
     # malcontent-ui  # parental control
 
     
-    ### Programming Languages / SQL / Webserver
+    ### Virtualization
     docker
     docker-compose
+    virtualbox
+    virtualboxExtpack
+    vagrant
+    
 
   ];
   
@@ -468,6 +471,12 @@
   virtualisation.docker.enable = true;
   ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
   ## https://www.kali.org/docs/containers/official-kalilinux-docker-images/
+  
+  ### Virtualbox
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.host.enableHardening = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   ### Enable the OpenSSH daemon.
   services.openssh.enable = true;  
