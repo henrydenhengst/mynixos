@@ -186,6 +186,7 @@
     monero-gui
     
     ### Science / System / Utilities / Security
+    tree
     alacritty
     aircrack-ng
     arandr
