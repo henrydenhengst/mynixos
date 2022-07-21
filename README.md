@@ -10,7 +10,7 @@ minimum requirements current config:
 * 4 Gb memory
 * 100 Gb harddisk space
 
-What to do to make use of this repository to restore NixOS:
+what to do to make use of this repository to restore NixOS:
 
 1) Go to the [NixOS website](https://nixos.org/) and [download](https://channels.nixos.org/nixos-22.05/latest-nixos-gnome-x86_64-linux.iso) the latest iso.
 2) Install NixOS on your physical or virtual machine.
