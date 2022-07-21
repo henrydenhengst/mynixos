@@ -186,39 +186,33 @@
     monero-gui
     
     ### Science / System / Utilities / Security
-    usbutils
-    pciutils
-    binutils
-    mtr
-    dmidecode
-    ansible # Deployment done right
-    cachix # Nix build cache
-    lorri # Easy Nix shell
-    niv # Nix dependency management
-    nixos-generators
-    pulumi-bin # Infrastructure as code
-    python3 # Have you upgraded yet???
-    tealdeer # tldr for various shell tools
-    zola # Static site generator written in Rust
-    tree
-    alacritty
+    # bpytop
+    # flatpak
+    # htop
+    # kitty
+    # malcontent     # parental control
+    # malcontent-ui  # parental control
+    # terminator
+    # wezterm
     aircrack-ng
+    alacritty
+    ansible # Deployment done right
     arandr
     arp-scan
     asciinema
     atuin
     bash
     bash-completion
+    bash-preexec
     bashdb
     bashSnippets
-    bash-preexec
-    nix-bash-completions
     bat
     bettercap
-    # bpytop
+    binutils
     broot
     btop
     burpsuite
+    cachix # Nix build cache
     coreutils
     crunch
     curl
@@ -226,6 +220,7 @@
     dconf2nix
     dirb
     dmenu
+    dmidecode
     dnsutils
     du-dust
     exa
@@ -234,7 +229,6 @@
     file
     filezilla
     fish
-    # flatpak
     fundoc
     ghostscript
     git
@@ -247,7 +241,6 @@
     hdf5
     hplip
     hplipWithPlugin
-    # htop
     httrack
     iftop
     imagemagick
@@ -255,8 +248,8 @@
     john
     keepassxc
     killall
-    # kitty
     libmtp
+    lorri # Easy Nix shell
     lshw
     lsof
     macchanger
@@ -264,22 +257,29 @@
     metasploit
     mkpasswd
     mtpfs
+    mtr
     neofetch
     nethogs
     nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
     nikto
     nitrogen
+    niv # Nix dependency management
+    nix-bash-completions
     nix-index
     nix-prefetch-git
+    nixos-generators
     nmap
     ntfs3g
     openvpn
     p7zip
     pandoc
+    pciutils
     pdf2svg
     pptp
     procs
     proxychains
+    pulumi-bin # Infrastructure as code
+    python3 # Have you upgraded yet???
     qbittorrent
     ranger
     redshift
@@ -292,7 +292,7 @@
     sqlmap
     starship
     t-rec
-    # terminator
+    tealdeer # tldr for various shell tools
     thc-hydra
     tmux 
     tmuxPlugins.dracula
@@ -303,13 +303,14 @@
     topgrade
     traceroute
     tre-command
+    tree
     unrar
     unzip
+    usbutils
     variety
     vbetool
     ventoy-bin
     vnstat
-    # wezterm
     wget
     whatweb
     whois
@@ -321,9 +322,8 @@
     youtube-dl
     yt-dlp
     zip
+    zola # Static site generator written in Rust
     zsh
-    # malcontent     # parental control
-    # malcontent-ui  # parental control
     
     ### Virtualization
     docker
