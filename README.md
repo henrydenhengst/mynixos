@@ -1,6 +1,11 @@
 # mynixos
 mynixos configuration
 
+* Cinnamon - desktop envirronment
+* Awesome - WindowManager
+* Kodi - home theater software
+* RetroArch - frontend for emulators, game engines and media players.
+
 minimum requirements current config:
 * 4 Gb memory
 * 100 Gb harddisk space
