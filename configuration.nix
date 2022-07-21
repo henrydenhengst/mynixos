@@ -202,6 +202,7 @@
     aircrack-ng
     alacritty
     ansible # Deployment done right
+    appimage-run
     arandr
     arp-scan
     asciinema
