@@ -58,7 +58,7 @@
   # Enable CUPS to print documents for HP
   services.printing = {
     enable = true;
-    drivers = with pkgs; [ hplip ];
+    drivers = with pkgs; [ hplip hplipWithPlugin ];
   };
   programs.system-config-printer.enable = true;
   
