@@ -324,15 +324,10 @@
     zsh
     # malcontent     # parental control
     # malcontent-ui  # parental control
-
     
     ### Virtualization
     docker
     docker-compose
-    virtualbox
-    virtualboxExtpack
-    vagrant
-    
 
   ];
   
@@ -471,12 +466,6 @@
   virtualisation.docker.enable = true;
   ## Default delivery with Kali Linux https://hub.docker.com/r/kalilinux/kali-rolling
   ## https://www.kali.org/docs/containers/official-kalilinux-docker-images/
-  
-  ### Virtualbox
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.host.enableHardening = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   ### Enable the OpenSSH daemon.
   services.openssh.enable = true;  
