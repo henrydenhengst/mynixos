@@ -55,8 +55,13 @@
     };
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
+  # Enable CUPS to print documents for HP
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [ hplip ];
+  };
+  programs.system-config-printer.enable = true;
+  
 
   # Enable sound with pipewire.
   sound.enable = true;
