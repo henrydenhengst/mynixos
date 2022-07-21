@@ -61,6 +61,8 @@
     drivers = with pkgs; [ hplip hplipWithPlugin ];
   };
   programs.system-config-printer.enable = true;
+  services.avahi.enable = true;
+  services.avahi.nssmdns = true;
   
 
   # Enable sound with pipewire.
@@ -222,6 +224,7 @@
     coreutils
     crunch
     curl
+    dbus
     dconf
     dconf2nix
     dirb
@@ -285,7 +288,8 @@
     procs
     proxychains
     pulumi-bin # Infrastructure as code
-    python3 # Have you upgraded yet???
+    pythonFull
+    python3Full
     qbittorrent
     ranger
     redshift
