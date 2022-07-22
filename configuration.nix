@@ -55,15 +55,8 @@
     };
   };
 
-  # Enable CUPS to print documents for HP
-  services.printing = {
-    enable = true;
-    drivers = with pkgs; [ hplip hplipWithPlugin ];
-  };
-  programs.system-config-printer.enable = true;
-  services.avahi.enable = true;
-  services.avahi.nssmdns = true;
-  
+  # Enable CUPS to print documents.
+  services.printing.enable = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -108,7 +101,7 @@
     vimix-gtk-themes
     stilo-themes
     zuki-themes
-    # kitty-themes
+    kitty-themes
     dracula-theme
     
     ### Fonts
@@ -142,7 +135,7 @@
     vlc
 
     ### Developer Tools
-    # emacs   
+    emacs   
     vim
     geany
     micro
@@ -188,56 +181,37 @@
     exodus
     ghostwriter
     libreoffice
-    # marktext
-    # obsidian
+    marktext
+    obsidian
     monero-gui
     
     ### Science / System / Utilities / Security
-    # bpytop
-    # flatpak
-    # htop
-    # kitty
-    # malcontent     # parental control
-    # malcontent-ui  # parental control
-    # terminator
-    # wezterm
     aircrack-ng
-    alacritty
-    ansible # Deployment done right
-    appimage-run
-    arandr
     arp-scan
     asciinema
     atuin
     bash
-    bash-completion
-    bash-preexec
-    bashdb
-    bashSnippets
     bat
     bettercap
-    binutils
+    bpytop
     broot
     btop
     burpsuite
-    cachix # Nix build cache
     coreutils
     crunch
     curl
-    dbus
     dconf
     dconf2nix
     dirb
     dmenu
-    dmidecode
     dnsutils
     du-dust
     exa
     fd
-    ffmpeg
     file
     filezilla
     fish
+    flatpak
     fundoc
     ghostscript
     git
@@ -250,6 +224,7 @@
     hdf5
     hplip
     hplipWithPlugin
+    htop
     httrack
     iftop
     imagemagick
@@ -257,8 +232,8 @@
     john
     keepassxc
     killall
+    kitty
     libmtp
-    lorri # Easy Nix shell
     lshw
     lsof
     macchanger
@@ -266,30 +241,22 @@
     metasploit
     mkpasswd
     mtpfs
-    mtr
     neofetch
     nethogs
     nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
     nikto
     nitrogen
-    niv # Nix dependency management
-    nix-bash-completions
     nix-index
     nix-prefetch-git
-    nixos-generators
     nmap
     ntfs3g
     openvpn
     p7zip
     pandoc
-    pciutils
     pdf2svg
     pptp
     procs
     proxychains
-    pulumi-bin # Infrastructure as code
-    pythonFull
-    python3Full
     qbittorrent
     ranger
     redshift
@@ -297,12 +264,13 @@
     ripgrep
     rsync # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=rsync
     rustscan
+    shotcut
     smartmontools
     socialscan
     sqlmap
     starship
     t-rec
-    tealdeer # tldr for various shell tools
+    terminator
     thc-hydra
     tmux 
     tmuxPlugins.dracula
@@ -313,14 +281,13 @@
     topgrade
     traceroute
     tre-command
-    tree
     unrar
     unzip
-    usbutils
     variety
     vbetool
     ventoy-bin
     vnstat
+    wezterm
     wget
     whatweb
     whois
@@ -332,10 +299,12 @@
     youtube-dl
     yt-dlp
     zip
-    zola # Static site generator written in Rust
     zsh
+    # malcontent     # parental control
+    # malcontent-ui  # parental control
+
     
-    ### Virtualization
+    ### Programming Languages / SQL / Webserver
     docker
     docker-compose
 
@@ -366,7 +335,7 @@
   programs.dconf.enable = true;
   
   ### Starship
-  programs.starship.enable = true;
+    programs.starship.enable = true;
   programs.starship.settings = {
     add_newline = false;
     format = "$shlvl$shell$username$hostname$nix_shell$git_branch$git_commit$git_state$git_status$directory$jobs$cmd_duration$character";
@@ -437,8 +406,8 @@
   programs.vim.defaultEditor = true;
   
   ### emacs
-  # services.emacs.enable = true;
-  # services.emacs.install = true;
+  services.emacs.enable = true;
+  services.emacs.install = true;
   
   ### vnstat
   services.vnstat.enable = true;
@@ -448,25 +417,39 @@
   
   ### tmux
   programs.tmux.enable = true;
+  # programs.tmux.plugins [ tmuxPlugins.resurrect tmuxPlugins.tilish tmuxPlugins.dracula ]
+  
   programs.tmux.plugins = with pkgs.tmuxPlugins; [
     resurrect
     tilish
     dracula
   ];
 
+  #programs.tmux.plugins = with pkgs; [
+  #  tmuxPlugins.resurrect
+  #  tmuxPlugins.tilish
+  #  tmuxPlugins.dracula
+  #];
+
+  #programs.tmux.plugins = [
+  #  pkgs.tmuxPlugins.resurrect
+  #  pkgs.tmuxPlugins.tilish
+  #  pkgs.tmuxPlugins.dracula
+  #];
+  
   ### bash
   programs.bash.enableCompletion = true;
   programs.bash.enableLsColors = true;
   
   ### zsh
-  programs.zsh.enable = true;
+  # programs.zsh.enable = true;
   # programs.zsh.enableCompletion = true;
   # programs.zsh.syntaxHighlighting.enable = true;
   # programs.zsh.autosuggestions.enable = true;
   # programs.zsh.ohMyZsh.enable = true;
   
   ### fish
-  programs.fish.enable = true;
+  # programs.fish.enable = true;
   
   ### Fonts Settings
   fonts.enableGhostscriptFonts = true;
