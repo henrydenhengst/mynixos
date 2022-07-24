@@ -139,6 +139,7 @@
     nitrogen
     picom
     polybar
+    volumeicon
     
     ### Audio & Video
     ardour
