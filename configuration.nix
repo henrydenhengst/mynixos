@@ -306,6 +306,7 @@
     starship
     t-rec
     tealdeer # tldr for various shell tools
+    terminator
     thc-hydra
     tmux 
     tmuxPlugins.dracula
