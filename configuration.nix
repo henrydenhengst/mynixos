@@ -131,6 +131,7 @@
     ### awesome wm
     alacritty
     arandr
+    conky
     dmenu
     feh
     neocomp
