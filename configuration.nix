@@ -133,8 +133,12 @@
     arandr
     dmenu
     feh
+    neocomp
     neofetch
+    networkmanagerapplet
     nitrogen
+    picom
+    polybar
     
     ### Audio & Video
     ardour
