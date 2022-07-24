@@ -128,6 +128,14 @@
     ultimate-oldschool-pc-font-pack
     libre-caslon
     
+    ### awesome wm
+    alacritty
+    arandr
+    dmenu
+    feh
+    neofetch
+    nitrogen
+    
     ### Audio & Video
     ardour
     clementine
@@ -202,10 +210,8 @@
     # terminator
     # wezterm
     aircrack-ng
-    alacritty
     ansible # Deployment done right
     appimage-run
-    arandr
     arp-scan
     asciinema
     atuin
@@ -228,7 +234,6 @@
     dconf
     dconf2nix
     dirb
-    dmenu
     dmidecode
     dnsutils
     du-dust
@@ -267,11 +272,9 @@
     mkpasswd
     mtpfs
     mtr
-    neofetch
     nethogs
     nfs-utils # https://github.com/NixOS/nixpkgs/blob/nixos-22.05/nixos/modules/tasks/filesystems/nfs.nix
     nikto
-    nitrogen
     niv # Nix dependency management
     nix-bash-completions
     nix-index
