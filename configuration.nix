@@ -441,6 +441,12 @@
   ### wireshark
   programs.wireshark.enable = true;
   
+  ### IPFS
+  services.ipfs.enable = true;
+  services.ipfs.group "ipfs"
+  services.ipfs.user "henry"
+  services.ipfs.ipfsMountDir "/home/henry/ipfs"
+  
   ### Dconf
   programs.dconf.enable = true;
   
