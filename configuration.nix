@@ -134,13 +134,23 @@
     conky
     dmenu
     feh
+    librewolf
+    mpc-cli
+    mpc-qt
+    mpc123
+    mpd
     neocomp
     neofetch
     networkmanagerapplet
     nitrogen
     picom
     polybar
+    scrot
+    unclutter
     volumeicon
+    xorg.xbacklight
+    xsel
+    slock
     
     ### Audio & Video
     ardour
