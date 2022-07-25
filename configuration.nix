@@ -139,6 +139,7 @@
     mpc-qt
     mpc123
     mpd
+    ncmpcpp
     neocomp
     neofetch
     networkmanagerapplet
@@ -146,11 +147,11 @@
     picom
     polybar
     scrot
+    slock
     unclutter
     volumeicon
     xorg.xbacklight
     xsel
-    slock
     
     ### Audio & Video
     ardour
