@@ -261,6 +261,7 @@
     filezilla
     fish
     fundoc
+    geekbench
     ghostscript
     git
     gnupg
