@@ -151,6 +151,7 @@
     xorg.xbacklight
     xsel
     slock
+    urxvt
     
     ### Audio & Video
     ardour
