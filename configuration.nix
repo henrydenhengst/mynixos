@@ -165,6 +165,62 @@
     obs-studio
     droidcam
     vlc
+    
+    ### Kodi Packages
+    kodiPackages.kodi
+    kodiPackages.six
+    kodiPackages.idna
+    kodiPackages.iagl
+    kodiPackages.trakt
+    kodiPackages.arrow
+    kodiPackages.kodi-six
+    kodiPackages.keymap
+    kodiPackages.future
+    kodiPackages.youtube
+    kodiPackages.urllib3
+    kodiPackages.svtplay
+    kodiPackages.signals
+    kodiPackages.routing
+    kodiPackages.pvr-hts
+    kodiPackages.netflix
+    kodiPackages.chardet
+    kodiPackages.certifi
+    kodiPackages.vfs-sftp
+    kodiPackages.requests
+    kodiPackages.myconnpy
+    kodiPackages.libretro
+    kodiPackages.joystick
+    kodiPackages.jellyfin
+    kodiPackages.dateutil
+    kodiPackages.websocket
+    kodiPackages.pdfreader
+    kodiPackages.osmc-skin
+    kodiPackages.orftvthek
+    kodiPackages.invidious
+    kodiPackages.xbmcswift2
+    kodiPackages.simplejson
+    kodiPackages.defusedxml
+    kodiPackages.kodi-platform
+    kodiPackages.trakt-module
+    kodiPackages.arteplussept
+    kodiPackages.archive_tool
+    kodiPackages.a4ksubtitles
+    kodiPackages.steam-library
+    kodiPackages.pvr-hdhomerun
+    kodiPackages.libretro-mgba
+    kodiPackages.vfs-libarchive
+    kodiPackages.steam-launcher
+    kodiPackages.requests-cache
+    kodiPackages.pvr-iptvsimple
+    kodiPackages.libretro-snes9x
+    kodiPackages.steam-controller
+    kodiPackages.libretro-genplus
+    kodiPackages.inputstream-rtmp
+    kodiPackages.typing_extensions
+    kodiPackages.inputstreamhelper
+    kodiPackages.inputstream-adaptive
+    kodiPackages.inputstream-ffmpegdirect
+    kodiPackages.controller-topology-project
 
     ### Developer Tools
     # emacs   
@@ -367,8 +423,8 @@
   
   ### Kodi + Plugins
   services.xserver.desktopManager.kodi.enable = true;
-  # services.xserver.desktopManager.kodi.package = kodi.withPackages (pkgs: with pkgs; [ osmc-skin ]);
-  
+  services.xserver.desktopManager.kodi.package = kodi.withPackages (pkgs: with pkgs; [ kodi six idna iagl trakt arrow kodi-six keymap future youtube urllib3 svtplay signals routing pvr-hts netflix chardet certifi vfs-sftp requests myconnpy libretro joystick jellyfin dateutil websocket pdfreader osmc-skin orftvthek invidious xbmcswift2 simplejson defusedxml kodi-platform trakt-module arteplussept archive_tool a4ksubtitles steam-library pvr-hdhomerun libretro-mgba vfs-libarchive steam-launcher requests-cache pvr-iptvsimple libretro-snes9x steam-controller libretro-genplus inputstream-rtmp typing_extensions inputstreamhelper inputstream-adaptive inputstream-ffmpegdirect controller-topology-project ]);
+   
   ### RetroArch
   services.xserver.desktopManager.retroarch.enable = true;
   
