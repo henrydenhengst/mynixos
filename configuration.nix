@@ -332,6 +332,7 @@
     httrack
     iftop
     imagemagick
+    ipfs
     jmtpfs
     john
     keepassxc
