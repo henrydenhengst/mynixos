@@ -424,8 +424,8 @@
   
   ### Kodi + Plugins
   services.xserver.desktopManager.kodi.enable = true;
-  services.xserver.desktopManager.kodi.package = kodi.withPackages (pkgs: with pkgs; [ kodi six idna iagl trakt arrow kodi-six keymap future youtube urllib3 svtplay signals routing pvr-hts netflix chardet certifi vfs-sftp requests myconnpy libretro joystick jellyfin dateutil websocket pdfreader osmc-skin orftvthek invidious xbmcswift2 simplejson defusedxml kodi-platform trakt-module arteplussept archive_tool a4ksubtitles steam-library pvr-hdhomerun libretro-mgba vfs-libarchive steam-launcher requests-cache pvr-iptvsimple libretro-snes9x steam-controller libretro-genplus inputstream-rtmp typing_extensions inputstreamhelper inputstream-adaptive inputstream-ffmpegdirect controller-topology-project ]);
-   
+  services.xserver.desktopManager.kodi.package = pkgs.kodi.withPackages (pkgs: with pkgs; [ osmc-skin ]);   
+  
   ### RetroArch
   services.xserver.desktopManager.retroarch.enable = true;
   
