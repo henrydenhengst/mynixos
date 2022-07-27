@@ -299,7 +299,6 @@
     arp-scan
     asciinema
     atuin
-    authy
     bash
     bash-completion
     bash-preexec
@@ -414,7 +413,6 @@
     ventoy-bin
     vnstat
     wget
-    xpra
     whatweb
     whois
     wireshark
@@ -452,20 +450,11 @@
   ### parental control
   # services.malcontent.enable = true;
   
-  ### Xpra
-  services.xserver.displayManager.xpra.enable = true;
-  services.xserver.displayManager.xpra.pulseaudio = true;
-  services.xserver.displayManager.xpra.auth "password:value=mysecret"
-  services.xserver.displayManager.xpra.bindTcp "0.0.0.0:10000"
-  
   ### wireshark
   programs.wireshark.enable = true;
   
   ### IPFS
   services.ipfs.enable = true;
-  services.ipfs.group "ipfs"
-  services.ipfs.user "henry"
-  services.ipfs.ipfsMountDir "/home/henry/ipfs"
   
   ### Dconf
   programs.dconf.enable = true;
