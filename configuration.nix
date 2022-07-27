@@ -273,14 +273,14 @@
     # obsidian
     monero-gui
     
-    ### Science / System / Utilities / Security
+    ### Science / System / Utilities / Privacy / Security
     # bpytop
     # flatpak
     # htop
     # kitty
     # malcontent     # parental control
     # malcontent-ui  # parental control
-    # terminator
+    # thunderbird
     # wezterm
     aircrack-ng
     ansible # Deployment done right
