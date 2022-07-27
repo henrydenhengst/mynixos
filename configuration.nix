@@ -165,6 +165,11 @@
     obs-studio
     droidcam
     vlc
+    soundconverter
+    lmms
+    kazam
+    simplescreenrecorder
+    handbrake
     
     ### Kodi Packages
     kodiPackages.kodi
@@ -260,6 +265,9 @@
     # google-chrome
     signal-desktop
     element-desktop
+    discord
+    shortwave
+    slack
     lynx
     # tor
     # tor-browser-bundle-bin
@@ -269,6 +277,9 @@
     exodus
     ghostwriter
     libreoffice
+    simplenote
+    foliate
+    qalculate-gtk
     # marktext
     # obsidian
     monero-gui
@@ -288,6 +299,7 @@
     arp-scan
     asciinema
     atuin
+    authy
     bash
     bash-completion
     bash-preexec
