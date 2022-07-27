@@ -268,6 +268,7 @@
     discord
     shortwave
     slack
+    teams
     lynx
     # tor
     # tor-browser-bundle-bin
