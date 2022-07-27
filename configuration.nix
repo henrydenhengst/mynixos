@@ -374,6 +374,7 @@
     remmina
     ripgrep
     rsync # https://search.nixos.org/options?channel=22.05&from=0&size=50&sort=relevance&type=packages&query=rsync
+    rustdesk
     rustscan
     smartmontools
     socialscan
@@ -401,6 +402,7 @@
     ventoy-bin
     vnstat
     wget
+    xpra
     whatweb
     whois
     wireshark
@@ -437,6 +439,12 @@
   
   ### parental control
   # services.malcontent.enable = true;
+  
+  ### Xpra
+  services.xserver.displayManager.xpra.enable = true;
+  services.xserver.displayManager.xpra.pulseaudio = true;
+  services.xserver.displayManager.xpra.auth "password:value=mysecret"
+  services.xserver.displayManager.xpra.bindTcp "0.0.0.0:10000"
   
   ### wireshark
   programs.wireshark.enable = true;
