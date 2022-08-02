@@ -94,7 +94,7 @@
     users.henry = {
       isNormalUser = true;
       description = "Henry den Hengst";
-      extraGroups = [ "networkmanager" "wheel" "video" "audio" "lp" "scanner" "docker" "kvm" "wireshark" "vnstat" ];
+      extraGroups = [ "networkmanager" "wheel" "video" "audio" "lp" "scanner" "docker" "kvm" "wireshark" "vnstat" "lightdm" ];
       # You can keep the initialPassword if you *really* want to, but
       # that risks forgetting to change it
       initialPassword = "password";
