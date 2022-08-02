@@ -22,8 +22,13 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
-  # Define your hostname.
-  networking.hostName = "oslo"; 
+  # Define your network
+    networking = { 
+      hostName = "oslo";
+      domain = "viking.lan";
+      search = [ "viking.lan" ];
+      networkmanager.enable = true;
+    };
   # Enables wireless support via wpa_supplicant.
   # networking.wireless.enable = true;  
 
