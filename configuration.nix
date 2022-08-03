@@ -2,11 +2,6 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-### variables
-# let
-#   user="henry"
-# in
-
 { config, pkgs, ... }:
 
 {
@@ -16,7 +11,7 @@
       # <home-manager/nixos>
     ];
 
-  # Bootloader.
+  # Bootloader, check these hardware settings before you copy!
   
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -29,6 +24,7 @@
       search = [ "viking.lan" ];
       networkmanager.enable = true;
     };
+
   # Enables wireless support via wpa_supplicant.
   # networking.wireless.enable = true;  
 
@@ -104,7 +100,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -113,7 +108,6 @@
     vimix-gtk-themes
     stilo-themes
     zuki-themes
-    # kitty-themes
     dracula-theme
     
     ### Fonts
@@ -255,7 +249,9 @@
     speed_dreams
     torcs
     bottles
-    lutris    
+    lutris
+    grapejuice # this is really Roblox !
+    
     
     ### Graphics & Photography
     inkscape
@@ -285,8 +281,6 @@
     simplenote
     foliate
     qalculate-gtk
-    # marktext
-    # obsidian
     monero-gui
     
     ### Science / System / Utilities / Privacy / Security
