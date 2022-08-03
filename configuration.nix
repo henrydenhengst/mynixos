@@ -59,7 +59,9 @@
   # Enable CUPS to print documents for HP
   services.printing = {
     enable = true;
-    drivers = with pkgs; [ hplip hplipWithPlugin ];
+    drivers = with pkgs; [ hplip hplipWithPlugin ];    
+    # canon-cups-ufr2 carps-cups 
+    # gutenprint
   };
   programs.system-config-printer.enable = true;
   services.avahi.enable = true;
