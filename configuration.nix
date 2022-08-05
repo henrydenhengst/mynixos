@@ -321,7 +321,9 @@
     dirb
     dmidecode
     dnsutils
+    dnstop
     du-dust
+    ethtool
     exa
     fd
     ffmpeg
@@ -393,6 +395,7 @@
     sqlmap
     starship
     t-rec
+    tcpdump
     tealdeer # tldr for various shell tools
     terminator
     thc-hydra
