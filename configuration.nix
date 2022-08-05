@@ -300,6 +300,7 @@
     arp-scan
     asciinema
     atuin
+    bc
     bash
     bash-completion
     bash-preexec
@@ -321,7 +322,6 @@
     dirb
     dmidecode
     dnsutils
-    dnstop
     du-dust
     ethtool
     exa
